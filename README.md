@@ -12,6 +12,7 @@ Ahmad Ilyas - 1125170130
 
 ```dart
 void main() {
+  //latihan 3 laundry ilyas
   int berat = 3;
   String layanan = "Express";
 
@@ -26,6 +27,8 @@ void main() {
   print("Total bayar   : Rp$total");
 }
 
+
+// ngitung harga laundry
 int hitungHarga(int berat) {
   if (berat < 2) {
     berat = 2;
@@ -34,6 +37,8 @@ int hitungHarga(int berat) {
   return berat * 7000;
 }
 
+
+// ngitung tambahan biaya ekpress
 int hitungTambahan(int harga, String layanan) {
   if (layanan == "Express") {
     return harga * 50 ~/ 100;
@@ -42,6 +47,8 @@ int hitungTambahan(int harga, String layanan) {
   return 0;
 }
 
+
+// ngitung total pembayarannye
 int hitungTotal(int harga, int tambahan) {
   return harga + tambahan;
 }
