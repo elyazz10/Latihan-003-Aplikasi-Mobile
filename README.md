@@ -8,8 +8,10 @@ Ahmad ilyas-1125170130
 - **BR-02:** Berat laundry di bawah 2 kg tetap dihitung 2 kg.
 - **BR-03:** Layanan Express mendapat tambahan biaya 50%.
 
+## Program Dart
+
+```dart
 void main() {
-  //latihan 3 laundry ilyas
   int berat = 3;
   String layanan = "Express";
 
@@ -24,8 +26,6 @@ void main() {
   print("Total bayar   : Rp$total");
 }
 
-
-// ngitung harga laundry
 int hitungHarga(int berat) {
   if (berat < 2) {
     berat = 2;
@@ -34,8 +34,6 @@ int hitungHarga(int berat) {
   return berat * 7000;
 }
 
-
-// ngitung tambahan biaya ekpress
 int hitungTambahan(int harga, String layanan) {
   if (layanan == "Express") {
     return harga * 50 ~/ 100;
@@ -43,9 +41,7 @@ int hitungTambahan(int harga, String layanan) {
 
   return 0;
 }
-
-
-// ngitung total pembayarannye
+```
 int hitungTotal(int harga, int tambahan) {
   return harga + tambahan;
 }
